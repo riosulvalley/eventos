@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <header className='wellness'>
         <h1 className='title'>
-          Encontre eventos de Front-End em todo o Brasil
+          Fique por dentro de todos os eventos na comunidade.
         </h1>
 
         <HeaderBanner events={events} />

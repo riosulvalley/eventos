@@ -38,7 +38,7 @@ const EventListItem = ({
 }) => (
   <article className='event'>
     <a className='event-media' href={link} title='Ver evento'>
-      <LazyImg src={image || 'svg/logo.svg'} alt={title} />
+      <LazyImg src={image || 'img/logo-riosulvalley.png'} alt={title} />
     </a>
     <div className='event-main'>
       <a className='content' href={link} title='Ver evento'>

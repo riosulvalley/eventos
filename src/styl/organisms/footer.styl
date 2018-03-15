@@ -16,15 +16,23 @@
         justify-content space-between
     
     p a 
-        color $brand-secondary
+        color $brand-primary
         
 
 .footer-inner--main 
     font(p2)
+    width $screen-full!important
     
     +above('sm')
         grid-space()
         lost-column 2/3 flex
+
+    svg
+        fill $brand-primary
+
+    .right
+        float right
+        text-align right
      
     
 
@@ -58,8 +66,9 @@
 
 .footer-hold 
     block-base()
-    background $gray-white
+    background $gray
     text-align center
+    color $white
     
     p 
         font(p3, regular, primary, uppercase) 
