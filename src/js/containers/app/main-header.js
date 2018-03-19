@@ -9,7 +9,7 @@ const MainHeader = () => (
     </a>
     <a
       className='btn-link'
-      href='https://github.com/frontendbr/eventos'
+      href='https://goo.gl/forms/hNZMkI1JqxfOeQev2'
       title='Anuncie seu evento'>
         Anunciar Evento
     </a>

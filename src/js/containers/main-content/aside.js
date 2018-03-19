@@ -9,7 +9,7 @@ const Aside = () => (
         Conhece algum evento na região que não está listado?
       </h2>
       <a
-        href='https://github.com/frontendbr/eventos/issues'
+        href='https://goo.gl/forms/hNZMkI1JqxfOeQev2'
         className='btn'
         aria-label='Anunciar Evento'
         title='Anuncie seu evento'>
