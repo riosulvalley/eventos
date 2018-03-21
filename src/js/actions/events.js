@@ -19,8 +19,8 @@ export const eventsFailed = () => ({
 })
 
 export const fetchEvents = () => {
-  return (dispatch, getState) => {
-    const { isFetching } = getState().events
+  return (dispatch, getCity) => {
+    const { isFetching } = getCity().events
     if (isFetching) {
       return Promise.resolve()
     }

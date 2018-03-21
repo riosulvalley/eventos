@@ -29,8 +29,8 @@ export const prepareFilterSelects = (events) => {
       return event.date.month
     })
 
-    const allStates = events.map((event) => {
-      return event.location.state
+    const allCities = events.map((event) => {
+      return event.location.city
     })
 
     const months = removeDuplicatedEntries(allMonths).map((month) => {
@@ -40,15 +40,15 @@ export const prepareFilterSelects = (events) => {
       }
     })
 
-    const states = removeDuplicatedEntries(allStates).map((state) => {
+    const cities = removeDuplicatedEntries(allCities).map((city) => {
       return {
-        text: state,
-        value: state
+        text: city,
+        value: city
       }
     })
 
     dispatch(fillFilterSelect('months', months))
-    dispatch(fillFilterSelect('state', states))
+    dispatch(fillFilterSelect('city', cities))
   }
 }
 

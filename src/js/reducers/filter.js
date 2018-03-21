@@ -16,27 +16,27 @@ const initialState = {
     }]
   },
 
-  state: {
-    icon: { id: 'location', label: 'Estado' },
-    label: 'Escolha um estado',
+  city: {
+    icon: { id: 'location', label: 'Locais' },
+    label: 'Escolha uma cidade',
     selected: '',
     options: [{
-      text: 'Escolha um estado', value: ''
+      text: 'Escolha uma cidade', value: ''
     }]
   },
 
   searchField: ''
 }
 
-const filter = (state = initialState, action) => {
+const filter = (city = initialState, action) => {
   switch (action.type) {
     case FILL_FILTER_SELECTS:
       return {
-        ...state,
+        ...city,
         [action.payload.select]: {
-          ...state[action.payload.select],
+          ...city[action.payload.select],
           options: [
-            ...state[action.payload.select].options,
+            ...city[action.payload.select].options,
             ...action.payload.options
           ]
         }
@@ -44,20 +44,20 @@ const filter = (state = initialState, action) => {
 
     case CHOOSE_FILTER_SELECT:
       return {
-        ...state,
+        ...city,
         [action.payload.field]: {
-          ...state[action.payload.field],
+          ...city[action.payload.field],
           selected: action.payload.value
         }
       }
 
     case FILTER_BY_TEXT:
       return {
-        ...state,
+        ...city,
         searchField: action.payload.value
       }
   }
-  return state
+  return city
 }
 
 export default filter

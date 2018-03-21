@@ -6,10 +6,10 @@ import FormSearch from './form-search'
 
 const HeaderFilter = ({
   monthFilter,
-  stateFilter,
+  cityFilter,
   searchField,
   handleChangeMonth,
-  handleChangeState,
+  handleChangeCity,
   handleChangeText
 }) => (
   <nav className='filter'>
@@ -19,9 +19,9 @@ const HeaderFilter = ({
       handleChange={handleChangeMonth} />
 
     <FormSelect
-      key='states'
-      {...stateFilter}
-      handleChange={handleChangeState} />
+      key='cities'
+      {...cityFilter}
+      handleChange={handleChangeCity} />
 
     <FormSearch
       searchField={searchField}
@@ -31,10 +31,10 @@ const HeaderFilter = ({
 
 HeaderFilter.propTypes = {
   monthFilter: PropTypes.object.isRequired,
-  stateFilter: PropTypes.object.isRequired,
+  cityFilter: PropTypes.object.isRequired,
   searchField: PropTypes.string.isRequired,
   handleChangeMonth: PropTypes.func.isRequired,
-  handleChangeState: PropTypes.func.isRequired,
+  handleChangeCity: PropTypes.func.isRequired,
   handleChangeText: PropTypes.func.isRequired
 }
 

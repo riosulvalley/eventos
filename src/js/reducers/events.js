@@ -18,38 +18,38 @@ const initialState = {
   isFetching: false
 }
 
-const events = (state = initialState, action) => {
+const events = (city = initialState, action) => {
   switch (action.type) {
     case FETCH_EVENTS:
       return {
-        ...state,
+        ...city,
         isFetching: true
       }
 
     case EVENTS_SUCCESS:
       return {
-        ...state,
+        ...city,
         events: action.payload.events,
         isFetching: false
       }
 
     case EVENTS_FAILED:
       return {
-        ...state,
+        ...city,
         isFetching: false
       }
 
     case CHOOSE_FILTER_SELECT:
       const { field, value } = action.payload
       return {
-        ...state,
-        events: state.events.map((event) => {
+        ...city,
+        events: city.events.map((event) => {
           let shouldShowByMonth = event.shouldShowByMonth === undefined
             ? true
             : event.shouldShowByMonth
-          let shouldShowByState = event.shouldShowByState === undefined
+          let shouldShowByCity = event.shouldShowByCity === undefined
             ? true
-            : event.shouldShowByState
+            : event.shouldShowByCity
 
           if (field === 'months') {
             shouldShowByMonth = !value
@@ -57,24 +57,24 @@ const events = (state = initialState, action) => {
               : event.date.month === value
           }
 
-          if (field === 'state') {
-            shouldShowByState = !value
+          if (field === 'city') {
+            shouldShowByCity = !value
               ? true
-              : event.location.state === value
+              : event.location.city === value
           }
 
           return {
             ...event,
             shouldShowByMonth,
-            shouldShowByState
+            shouldShowByCity
           }
         })
       }
 
     case FILTER_BY_TEXT:
       return {
-        ...state,
-        events: state.events.map((event) => {
+        ...city,
+        events: city.events.map((event) => {
           return {
             ...event,
             shouldShowByText: !!event.title
@@ -83,7 +83,7 @@ const events = (state = initialState, action) => {
         })
       }
   }
-  return state
+  return city
 }
 
 export default events

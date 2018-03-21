@@ -35,24 +35,24 @@ Page.propTypes = {
   events: PropTypes.array.isRequired
 }
 
-const mapStateToProps = (state) => {
-  const { filter } = state
+const mapCityToProps = (city) => {
+  const { filter } = city
   const monthsFilter = filter.months
-  const stateFilter = filter.state
+  const cityFilter = filter.city
   return {
-    events: state.events.events
+    events: city.events.events
       .filter((event) => {
-        if (monthsFilter.selected && stateFilter.selected) {
+        if (monthsFilter.selected && cityFilter.selected) {
           return event.shouldShowByMonth !== false &&
-            event.shouldShowByState !== false
+            event.shouldShowByCity !== false
         }
 
-        if (monthsFilter.selected && !stateFilter.selected) {
+        if (monthsFilter.selected && !cityFilter.selected) {
           return event.shouldShowByMonth !== false
         }
 
-        if (!monthsFilter.selected && stateFilter.selected) {
-          return event.shouldShowByState !== false
+        if (!monthsFilter.selected && cityFilter.selected) {
+          return event.shouldShowByCity !== false
         }
 
         return event
@@ -63,4 +63,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Page)
+export default connect(mapCityToProps)(Page)

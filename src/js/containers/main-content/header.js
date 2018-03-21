@@ -25,7 +25,7 @@ class Header extends Component {
   }
 
   render () {
-    const { events, monthFilter, stateFilter, searchField } = this.props
+    const { events, monthFilter, cityFilter, searchField } = this.props
     return (
       <header className='wellness'>
         <h1 className='title'>
@@ -35,10 +35,10 @@ class Header extends Component {
         <HeaderBanner events={events} />
         <HeaderFilter
           monthFilter={monthFilter}
-          stateFilter={stateFilter}
+          cityFilter={cityFilter}
           searchField={searchField}
           handleChangeMonth={(e) => this.handleChange('months', e)}
-          handleChangeState={(e) => this.handleChange('state', e)}
+          handleChangeCity={(e) => this.handleChange('city', e)}
           handleChangeText={(e) => this.handleChangeText(e)}
         />
       </header>
@@ -53,15 +53,15 @@ Header.defaultProps = {
 Header.propTypes = {
   events: PropTypes.array.isRequired,
   monthFilter: PropTypes.object.isRequired,
-  stateFilter: PropTypes.object.isRequired,
+  cityFilter: PropTypes.object.isRequired,
   searchField: PropTypes.string.isRequired
 }
 
-const mapStateToProps = (state) => ({
-  events: state.events.events.filter((_, index) => index < 5),
-  monthFilter: state.filter.months,
-  stateFilter: state.filter.state,
-  searchField: state.filter.searchField
+const mapCityToProps = (city) => ({
+  events: city.events.events.filter((_, index) => index < 5),
+  monthFilter: city.filter.months,
+  cityFilter: city.filter.city,
+  searchField: city.filter.searchField
 })
 
-export default connect(mapStateToProps)(Header)
+export default connect(mapCityToProps)(Header)
