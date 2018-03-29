@@ -136,7 +136,7 @@ gulp.task('browser-sync', () => {
 gulp.task('pages', () => {
   gulp.src(buildPaths.build)
     .pipe(ghPages({
-      remoteUrl: 'https://github.com/riosulvalley/eventos.git'
+      remoteUrl: 'git@github.com:frontendbr/eventos.git'
     }))
 })
 
