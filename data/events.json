@@ -99,4 +99,24 @@
     "image": "",
     "shortDescription": "Evento com palestras, painéis e networking sobre startups"
   }
+  
+   {
+    "title": "À procura do emprego perfeito",
+    "date": {
+      "day": "26",
+      "month": "Maio",
+      "year": 2018
+    },
+    "innerLink": "inner.html",
+    "link": "",
+    "price": "A partir de R$20,00",
+    "location": {
+      "city": "Volta Redonda",
+      "state": "RJ",
+      "address": "Teatro Gacemss 2, Vila Santa Cecília",
+      "locationUrl": ""
+    },
+    "image": "https://scontent.fsdu6-1.fna.fbcdn.net/v/t1.0-9/30726489_1012825432226531_4597875211784683520_n.jpg?_nc_cat=0&oh=0f7514b63907016a789ae0363967db32&oe=5B883A1A",
+    "shortDescription": "Como se destacar no mercado e conquistar o emprego dos seus sonhos com o LinkedIn"
+  }
 ]
