@@ -38,6 +38,26 @@
     "image": "",
     "shortDescription": "Evento realizado pelo Sebrae em parceria com o Rio Sul Valley."
   },
+  
+  {
+    "title": "Startup Day - Vassouras",
+    "date": {
+      "day": "19",
+      "month": "Maio",
+      "year": 2018
+    },
+    "innerLink": "inner.html",
+    "link": "",
+    "price": "Em breve",
+    "location": {
+      "city": "Vassouras",
+      "state": "RJ",
+      "address": "Em breve",
+      "locationUrl": "https://www.google.com.br/maps/place/Universidade+Severino+Sombra/@-22.4094339,-43.6634683,15z/data=!4m2!3m1!1s0x0:0xc63f64f24c89cbf6?sa=X&ved=0ahUKEwjO6q6zsvbaAhVR21MKHQXXB5QQ_BIIkQEwDQ"
+    },
+    "image": "",
+    "shortDescription": "Evento realizado pelo Sebrae em parceria com o Rio Sul Valley."
+  },
 
   {
     "title": "À procura do emprego perfeito",
