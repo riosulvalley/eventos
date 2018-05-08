@@ -1,6 +1,6 @@
 [
   {
-    "title": "Startup Day",
+    "title": "Startup Day - Resende",
     "date": {
       "day": "19",
       "month": "Maio",
@@ -20,7 +20,7 @@
   },
 
   {
-    "title": "Startup Day",
+    "title": "Startup Day - Volta Redonda",
     "date": {
       "day": "19",
       "month": "Maio",
@@ -30,10 +30,10 @@
     "link": "",
     "price": "Em breve",
     "location": {
-      "city": "Barra Mansa",
+      "city": "Volta Redonda",
       "state": "RJ",
       "address": "Em breve",
-      "locationUrl": ""
+      "locationUrl": "https://www.google.com.br/maps/place/UniFOA+-+Centro+Universit%C3%A1rio+de+Volta+Redonda/@-22.499433,-44.035102,15z/data=!4m5!3m4!1s0x0:0xbafdc6464500c6d3!8m2!3d-22.499433!4d-44.035102"
     },
     "image": "",
     "shortDescription": "Evento realizado pelo Sebrae em parceria com o Rio Sul Valley."
@@ -47,7 +47,7 @@
       "year": 2018
     },
     "innerLink": "inner.html",
-    "link": "",
+    "link": "https://www.sympla.com.br/a-procura-do-emprego-perfeito__273047",
     "price": "A partir de R$20,00",
     "location": {
       "city": "Volta Redonda",
