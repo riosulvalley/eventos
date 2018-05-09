@@ -7,7 +7,7 @@
       "year": 2018
     },
     "innerLink": "inner.html",
-    "link": "",
+    "link": "https://www.sympla.com.br/startup-day---volta-redondarj__269641",
     "price": "Gratuito",
     "location": {
       "city": "Resende",
@@ -34,6 +34,26 @@
       "state": "RJ",
       "address": "Em breve",
       "locationUrl": "https://www.google.com.br/maps/place/UniFOA+-+Centro+Universit%C3%A1rio+de+Volta+Redonda/@-22.499433,-44.035102,15z/data=!4m5!3m4!1s0x0:0xbafdc6464500c6d3!8m2!3d-22.499433!4d-44.035102"
+    },
+    "image": "",
+    "shortDescription": "Evento realizado pelo Sebrae em parceria com o Rio Sul Valley."
+  },
+  
+  {
+    "title": "Startup Day - Barra Mansa",
+    "date": {
+      "day": "19",
+      "month": "Maio",
+      "year": 2018
+    },
+    "innerLink": "inner.html",
+    "link": "https://www.sympla.com.br/startup-day---barra-mansarj__269635",
+    "price": "Gratuito",
+    "location": {
+      "city": "Volta Redonda",
+      "state": "RJ",
+      "address": "Centro Universitário de Barra Mansa (UBM)",
+      "locationUrl": "https://www.google.com.br/maps/place/UBM+-+Centro+Universit%C3%A1rio+de+Barra+Mansa/@-22.5486277,-44.1711467,15z/data=!4m2!3m1!1s0x0:0x6605fe59c9854a31?sa=X&ved=0ahUKEwiS8Lz8mPnaAhVEjpAKHVePAIYQ_BIIswEwDA"
     },
     "image": "",
     "shortDescription": "Evento realizado pelo Sebrae em parceria com o Rio Sul Valley."
