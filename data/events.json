@@ -7,7 +7,7 @@
       "year": 2018
     },
     "innerLink": "inner.html",
-    "link": "",
+    "link": "https://www.facebook.com/events/296497684254807/",
     "price": "Gratuito",
     "location": {
       "city": "Volta Redodna",
@@ -17,24 +17,5 @@
     },
     "image": "https://scontent.fcfc1-1.fna.fbcdn.net/v/t1.0-9/37888966_2235514233132128_8516997513213902848_o.jpg?_nc_cat=0&oh=d7072985496c46994b27cda708122522&oe=5C0B2EE9",
     "shortDescription": "- Mentorias gratuitas com os melhores especialistas da região;-Quiz RSV pelo nosso app que já está no ar, concorrendo a prêmios;- Rodas de conversa e palestras sobre diversos temas relacionados ao empreendedorismo, inovação e tecnologia."
-  },
-  {
-    "title": "Startup Weekend Education",
-    "date": {
-      "day": "24",
-      "month": "Agosto",
-      "year": 2018
-    },
-    "innerLink": "inner.html",
-    "link": "",
-    "price": "Em breve",
-    "location": {
-      "city": "Resende",
-      "state": "RJ",
-      "address": "AEDB Resende",
-      "locationUrl": "https://www.google.com.br/maps/place/Associa%C3%A7%C3%A3o+Educacional+Dom+Bosco+%E2%80%A2+AEDB/@-22.4830033,-44.472844,15z/data=!4m5!3m4!1s0x0:0x111333209fd065b6!8m2!3d-22.4830033!4d-44.472844"
-    },
-    "image": "http://communities.techstars.com/images/logos/swe_lockup_logo.png",
-    "shortDescription": "Descubra como criar uma startup em 54 horas"
   }
 ]
